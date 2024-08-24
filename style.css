@@ -515,5 +515,35 @@ canvas{
     text-transform: uppercase;
     border: 2px solid RED;
 }
+#loader{
+    height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  background-color: #212121;
+  padding-bottom: 1vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+#num 
+{
+    height:30vw;
+    width:85vw;
+    margin-right: 1vw;
+   
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    display: flex;
+    font-size: 10vw;
+    color:red;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
+#num h1,h2{
+    font-size: 19vw;
+}
+
 
  

@@ -589,3 +589,40 @@ gsap.from("#contacts .btn-posnawr4",{
     scrub:2,
      }
 })
+function loaderani()
+{
+  var tl = gsap.timeline();
+  tl.from("#num", {
+    opacity: 0,
+    onStart: function () {
+      var h1timer = document.querySelector("#num h1");
+      var grow = 0;
+      setInterval(function () {
+        if (grow < 100) {
+          h1timer.innerHTML = grow++;
+          if(grow == 65 || grow == 92)
+          {
+            for(let i=0;i<1000000000;i++)
+            {
+              grow+=0;
+            }
+          }
+
+        } else {
+          h1timer.innerHTML = grow;
+        }
+      }, 33);
+    },
+  });
+  tl.to("#loader", {
+    opacity: 0,
+    duration: 0.6,
+    delay: 4.1,
+  });
+ 
+  tl.to("#loader", {
+    display: "none",
+    opacity:0
+  });
+}
+loaderani();
